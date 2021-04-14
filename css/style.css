@@ -1,0 +1,77 @@
+/*variables de colores*/
+:root{
+	--color-primary: #2b2e4a;
+	--color-primary-o: #2a2c3d;
+	--color-primary-xo: #252630;
+	--color-primary-l: #3b3f61;
+	--color-primary-xl: #4b4e6a;
+
+	--color-secundary: #e84545;
+	--color-secundary-o: #e13232;
+	--color-secundary-xo: #c53030;
+	--color-secundary-l: #f36c6c;
+	--color-secundary-xl: #f28f8f;
+
+	--color-text: #1d201a;
+	--color-text-l: #9da398;
+	--color-text-xl: #c4c9bf;
+
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: var(--color-primary-xo)
+}
+
+/*nav*/
+.nav{
+	background-color: var(--color-primary);
+	display: flex;
+	padding: 0.5em 0
+}
+.nav_logo{
+	width: 70px;
+	height: 70px;
+	margin-left: 10px;
+	display: none
+}
+.nav_list{
+	display: flex;
+	padding: 0;
+	margin-right: auto;
+	margin-left: auto
+
+}
+.nav_item{
+	margin: 0 0.3em;
+	list-style: none;
+	font-size: 12px
+}
+.nav_item a{
+	padding: 1em;
+	text-decoration: none;
+	border: 2px solid var(--color-secundary-xl);
+	border-radius: 15px;
+	color: var(--color-text-xl);
+	transition: 0.5s;
+	font-weight: bold;
+}
+.nav_item a:hover{
+	background-color: var(--color-secundary-xl);
+	transition: 0.5s;
+	border-radius: 15px;
+	color: var(--color-text);
+}
+
+/*header*/
+.header{
+	background-color: var(--color-secundary-l);
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: center;
+	grid-column-gap: 2em;
+	padding: 5em
+}
+.header_logo{
+	width: 110px;
+	height: 100px
+}
