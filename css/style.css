@@ -55,7 +55,7 @@ body{
 .nav_item a{
 	padding: 1em; 
 	text-decoration: none;
-	border: 2.3px solid var(--color-secundary-xl);
+	border: 2.0px solid var(--color-secundary-xl);
 	border-radius: 15px;
 	color: var(--color-text-xl);
 	transition: 0.5s;
