@@ -17,6 +17,12 @@
 	--color-text-xl: #c4c9bf;
 
 }
+
+/*etiquetas de colores*/
+.color-secondary{
+	color: var(--color-secundary-l)
+}
+
 body{
 	font-family: 'Roboto', sans-serif;
 	background-color: var(--color-primary-xo)
@@ -47,9 +53,9 @@ body{
 	font-size: 12px
 }
 .nav_item a{
-	padding: 1em;
+	padding: 1em; 
 	text-decoration: none;
-	border: 2px solid var(--color-secundary-xl);
+	border: 2.3px solid var(--color-secundary-xl);
 	border-radius: 15px;
 	color: var(--color-text-xl);
 	transition: 0.5s;
@@ -74,4 +80,62 @@ body{
 .header_logo{
 	width: 110px;
 	height: 100px
+}
+.header_title{
+	color: var(--color-text);
+}
+.header_link{
+	text-decoration: none;
+	color: var(--color-primary-xo);
+	font-size: 1.2em;
+	border-bottom: 1px solid var(--color-primary);
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 70%
+}
+
+/*container*/
+.container{
+	color: var(--color-text-xl);
+	margin: 2em 1em
+}
+
+/*about*/
+.about{
+	border-bottom: 2px dashed var(--color-secundary-xl)
+}
+.about_icon{
+	font-size: 1.3em
+}
+
+/*aptitudes*/
+.aptitudes{
+	border-bottom: 2px dashed var(--color-secundary-xl);
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto auto;
+	justify-content: center;
+}
+.aptitudes_title{
+	text-align: center;
+}
+.aptitudes_icon{
+	font-size: 5em;
+}
+.aptitudes_card{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	text-align:center;
+	margin: 1em auto;
+	padding: 4em;
+	min-width: 4em;
+	max-width: 4em;
+	min-height: 4em;
+	max-height: 4em;
+	background-color: var(--color-primary-xl);
+	border-radius: 10px
 }
