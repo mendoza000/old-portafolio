@@ -201,8 +201,18 @@ body{
 	padding: 0.7em;
 	border-radius: 5px;
 	margin: 0 0.2em;
+	transition:1s;
+}
+.project_btn:hover{
+	background-color: var(--color-secundary-xl);
+	transition:1s;
 }
 .btn_borde{
+	background-color: transparent;
+	border: 2px solid var(--color-secundary-l);
+	color: var(--color-secundary-l)
+}
+.btn_borde:hover{
 	background-color: transparent;
 	border: 2px solid var(--color-secundary-l);
 	color: var(--color-secundary-l)
@@ -224,6 +234,11 @@ body{
 	border-radius: 10px;
 	min-width: 90px;
 	max-width: 90px;
+	transition:1s;
+}
+.contact a:hover{
+	background-color: var(--color-primary-xl);
+	transition:1s;
 }
 .contact_content{
 	text-align: center;
@@ -252,3 +267,5 @@ body{
 	height: 50px;
 	margin: 1em 0
 }
+
+@media 
