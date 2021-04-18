@@ -72,21 +72,33 @@ body{
 .header{
 	background-color: var(--color-secundary-l);
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: auto;
 	justify-content: center;
 	grid-column-gap: 2em;
 	padding: 5em
 }
 .header_logo{
-	width: 110px;
-	height: 100px
+	width: 90px;
+	height: 90px;
+	object-fit: cover;
+	align-items: center;
+	display: block;
+	margin: 0 auto;
+	margin-top: -2em;
 }
 .header_title{
 	color: var(--color-text);
+	text-align: center;
+	border-bottom: 1px solid var(--color-primary)
+}
+.header_text{
+	text-align: center;
+	margin: -0.8em auto;
+	font-size: 17px
 }
 .header_link{
 	text-decoration: none;
-	color: var(--color-primary-xo);
+	color: var(--color-primary);
 	font-size: 1.2em;
 	border-bottom: 1px solid var(--color-primary);
 	text-align: center;
@@ -146,13 +158,95 @@ body{
   	grid-column-end: 3;
 }
 
+/*Proyectos*/
+.projects{
+	border-bottom: 2px dashed var(--color-secundary-xl);
+	display: flex;
+	flex-direction: column;
+	grid-column-gap: 0.5em;
+	justify-content: center;
+}
+.project_card{
+	/*display: flex;
+	flex-direction: column;*/
+	/*justify-content: center;
+	align-content: center;
+	align-items: center;
+	text-align:center;*/
+	margin: 1em auto;
+	min-width: 18em;
+	max-width: 18em;
+	min-height: 23em;
+	background-color: var(--color-primary-xl);
+	border-radius: 10px
+}
+.project_img{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+}
+.project_content{
+	margin: 0 1em;
+	text-align: center;
+}
+.project_text{
+	margin-bottom: 2em;
+}
+.project_btn{
+	background-color: var(--color-secundary-l);
+	color: var(--color-primary-xo);
+	text-decoration: none;
+	padding: 0.7em;
+	border-radius: 5px;
+	margin: 0 0.2em;
+}
+.btn_borde{
+	background-color: transparent;
+	border: 2px solid var(--color-secundary-l);
+	color: var(--color-secundary-l)
+}
+
+/*contact*/
+.contact{
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	grid-row-gap: 1em;
+	margin: 1em auto;
+	justify-content: center;
+}
+.contact a{
+	text-decoration: none;
+	background-color: var(--color-primary-l);
+	margin: 0 10px;
+	padding: 0.5em 1em;
+	border-radius: 10px;
+	min-width: 90px;
+	max-width: 90px;
+}
+.contact_content{
+	text-align: center;
+	color: var(--color-text-xl)
+}
+.contact_icon{
+	font-size: 50px;
+	color: var(--color-secundary-l);
+}
+.contact_text{
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 7px
+}
+
 /*footer*/
 .footer{
 	text-align: center;
 	align-items: center;
 	background-color: var(--color-primary);
 	position: absolute;
-	bottom: 100;
+	bottom: 0;
+	z-index: 3;
 	left: 0;
 	width: 100%;
 	height: 50px;
