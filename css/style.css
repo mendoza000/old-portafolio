@@ -176,7 +176,7 @@ body{
 	margin: 1em auto;
 	min-width: 18em;
 	max-width: 18em;
-	min-height: 23em;
+	min-height: 24em;
 	background-color: var(--color-primary-xl);
 	border-radius: 10px
 }
@@ -200,7 +200,7 @@ body{
 	text-decoration: none;
 	padding: 0.7em;
 	border-radius: 5px;
-	margin: 0 0.2em;
+	margin: 0 0.1em;
 	transition:1s;
 }
 .project_btn:hover{
