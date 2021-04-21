@@ -121,8 +121,10 @@ body{
 }
 
 /*aptitudes*/
-.aptitudes{
+.aptitudes_container{
 	border-bottom: 2px dashed var(--color-secundary-xl);
+}
+.aptitudes{
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 	grid-template-rows: repeat(3, auto);
@@ -153,11 +155,14 @@ body{
 	background-color: var(--color-primary-xl);
 	border-radius: 10px
 }
-.punta-punta{
+.punta-punta3{
 	grid-column-start: 1;
   	grid-column-end: 3;
 }
-
+.punta-punta4{
+	grid-column-start: 1;
+	grid-column-end: 4
+}
 /*Proyectos*/
 .projects{
 	border-bottom: 2px dashed var(--color-secundary-xl);
@@ -221,7 +226,8 @@ body{
 /*contact*/
 .contact{
 	display: grid;
-	grid-template-columns: repeat(2, auto);
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto;
 	grid-row-gap: 1em;
 	margin: 1em auto;
 	justify-content: center;
@@ -268,4 +274,115 @@ body{
 	margin: 1em 0
 }
 
-@media 
+@media screen and (min-width: 600px){
+	.aptitudes_container{
+		padding-top: 3em;
+		padding-bottom: 3em
+	}
+	.header{
+		padding-top: 8em;
+		padding-bottom: 8em
+	}
+	.container{
+		margin-left: 1.5em;
+		margin-right: 1.5em
+	}
+
+	.nav_list{
+		align-self: center;
+		margin-right: 1em
+	}
+	.nav_logo{
+		display: initial;
+	}
+	.nav_item a{
+		min-width: 4em;
+		max-width: 4em
+	}
+
+	.about{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 3em;
+		align-items: center;
+		padding-bottom: 3em 
+	}
+	.about_title_flex{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-left: 2em;
+		font-size: 2em;
+	}
+	.about p{
+		margin-right: 2em;
+		font-size: 18px
+	}
+	.about_icon_flex{
+		font-size: 4em
+	}
+
+	.aptitudes{
+		grid-template-columns: auto auto auto;
+		grid-template-rows: auto;
+	}
+	.aptitudes_title{
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+	.punta-punta3{
+		grid-column-start: initial;
+		grid-column-end: initial; 
+	}
+
+	.projects{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-around;
+		padding-bottom: 3em;
+		margin-bottom: 3em;
+	}
+	.project_card{
+		margin: 1em
+	}
+
+	.contact{
+	padding: 2em;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto;
+	grid-row-gap: auto;
+	margin: 1em auto;
+	justify-content: center;
+}
+}
+
+@media screen and (min-width: 1000px) {
+	.nav_logo{
+		margin-left: 2em
+	}
+	.nav_list{
+		margin-right: 2em
+	}
+	.nav_item a{
+		font-size: 16px
+	}
+	.aptitudes_container{
+		display: grid;
+		grid-template-columns: auto auto
+	}
+	.header{
+		padding-top: 11em;
+		padding-bottom: 11em
+	}
+
+	.about p{
+		width: 600px;
+		margin-right: auto;
+	}
+	.about_title_flex{
+		margin-left: auto
+	}
+}
