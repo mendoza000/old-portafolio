@@ -89,7 +89,15 @@ body{
 	grid-template-columns: auto;
 	justify-content: center;
 	grid-column-gap: 2em;
-	padding: 5em
+}
+.header_container{
+	display: grid;
+	grid-template-columns: auto;
+	justify-content: center;
+	grid-column-gap: 2em;
+	padding: 4em;
+	background-color: rgb(43, 46, 74, .4);
+	border-radius: 5px
 }
 .header_logo{
 	width: 90px;
@@ -389,8 +397,8 @@ body{
 		grid-template-columns: auto auto
 	}
 	.header{
-		padding-top: 11em;
-		padding-bottom: 11em
+		padding-top: 8em;
+		padding-bottom: 8em
 	}
 
 	.about p{
