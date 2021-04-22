@@ -83,7 +83,8 @@ body{
 
 /*header*/
 .header{
-	background-color: var(--color-secundary-l);
+	background-image: url(../im/code.jpg);
+	background-size: cover;
 	display: grid;
 	grid-template-columns: auto;
 	justify-content: center;
@@ -100,14 +101,15 @@ body{
 	margin-top: -2em;
 }
 .header_title{
-	color: var(--color-text);
+	color: var(--color-text-xl);
 	text-align: center;
 	border-bottom: 1px solid var(--color-primary)
 }
 .header_text{
 	text-align: center;
 	margin: -0.8em auto;
-	font-size: 17px
+	font-size: 17px;
+	color: var(--color-text-xl)
 }
 .header_link{
 	text-decoration: none;
@@ -141,7 +143,7 @@ body{
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 	grid-template-rows: repeat(3, auto);
-	grid-column-gap: 1em;
+	grid-column-gap: 1.5em;
 	justify-content: center;
 }
 .aptitudes_title{
@@ -218,6 +220,7 @@ body{
 	border-radius: 5px;
 	margin: 0 0.1em;
 	transition:1s;
+	font-weight: bold
 }
 .project_btn:hover{
 	background-color: var(--color-secundary-xl);
@@ -226,7 +229,8 @@ body{
 .btn_borde{
 	background-color: transparent;
 	border: 2px solid var(--color-secundary-l);
-	color: var(--color-secundary-l)
+	color: var(--color-secundary-l);
+	font-weight: bold;
 }
 .btn_borde:hover{
 	background-color: transparent;
