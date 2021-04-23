@@ -97,7 +97,8 @@ body{
 	grid-column-gap: 2em;
 	padding: 4em;
 	background-color: rgb(43, 46, 74, .4);
-	border-radius: 5px
+	border-radius: 5px;
+	box-shadow: 0px 10px 40px #111;
 }
 .header_logo{
 	width: 90px;
@@ -137,10 +138,33 @@ body{
 
 /*about*/
 .about{
-	border-bottom: 2px dashed var(--color-secundary-xl)
+	border-bottom: 2px dashed var(--color-secundary-xl);
+	margin-bottom: 1em;
 }
 .about_icon{
 	font-size: 1.3em
+}
+.about_1{
+	padding: 2em 1em
+}
+.about_2{
+	background-color: var(--color-primary-o);
+	width: 100%;
+	height: 100%;
+	padding: 2em 1em;
+	position: relative;
+	right: 5%;
+	bottom: 3.5%;
+	z-index: -1;
+	text-align: center;
+}
+.about2_icon{
+	font-size: 1.5em
+}
+.about_box{
+	border: 1px solid var(--color-primary-l);
+	border-radius: 5px;
+	margin: 1em
 }
 
 /*aptitudes*/
@@ -206,7 +230,7 @@ body{
 	max-width: 18em;
 	min-height: 24em;
 	background-color: var(--color-primary-xl);
-	box-shadow: 0px 15px 40px black;
+	box-shadow: 0px 10px 40px #111;
 }
 .project_img{
 	width: 100%;
@@ -298,6 +322,17 @@ body{
 }
 
 @media screen and (min-width: 600px){
+	.about_2{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-bottom: 0.8em;
+		padding-top: 0.3;
+		padding-right: 1.3em
+	}
+	.about_box{
+		padding: 1em
+	}
 	.aptitudes_container{
 		padding-top: 3em;
 		padding-bottom: 3em
@@ -328,22 +363,13 @@ body{
 		grid-template-columns: auto auto;
 		grid-gap: 3em;
 		align-items: center;
-		padding-bottom: 3em 
 	}
-	.about_title_flex{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		margin-left: 2em;
-		font-size: 2em;
+	.about_title{
+		text-align: center;
+		font-size: 2.5em
 	}
-	.about p{
-		margin-right: 2em;
+	.about_p{
 		font-size: 18px
-	}
-	.about_icon_flex{
-		font-size: 4em
 	}
 
 	.aptitudes{
@@ -401,9 +427,19 @@ body{
 		padding-bottom: 8em
 	}
 
-	.about p{
-		width: 600px;
-		margin-right: auto;
+	.about{
+		display: grid;
+		grid-template-columns: 1fr 1fr
+	}
+	.about_1{
+		padding-top: 0
+	}
+	.about_2{
+		padding: 1em 2em;
+		right: 7%
+	}
+	.about2_icon{
+		font-size: 2em
 	}
 	.about_title_flex{
 		margin-left: auto
