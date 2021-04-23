@@ -84,6 +84,7 @@ body{
 /*header*/
 .header{
 	background-image: url(../im/code.jpg);
+	/*background-color: #fff;*/
 	background-size: cover;
 	display: grid;
 	grid-template-columns: auto;
@@ -96,7 +97,7 @@ body{
 	grid-template-columns: auto;
 	justify-content: center;
 	grid-column-gap: 2em;
-	padding: 2em;
+	padding: 1em 0;
 	border-radius: 5px;
 }
 .header_logo{
