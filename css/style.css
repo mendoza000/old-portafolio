@@ -86,19 +86,20 @@ body{
 	background-image: url(../im/code.jpg);
 	/*background-color: #fff;*/
 	background-size: cover;
+	width: 100%;
 	display: grid;
 	grid-template-columns: auto;
 	justify-content: center;
 	grid-column-gap: 2em;
-	padding: 2em
+	padding: 5em 0em
 }
 .header_container{
 	display: grid;
 	grid-template-columns: auto;
 	justify-content: center;
-	grid-column-gap: 2em;
-	padding: 1em 0;
 	border-radius: 5px;
+	width: 90%;
+	margin: 0 auto
 }
 .header_logo{
 	width: 70px;
@@ -112,7 +113,8 @@ body{
 .header_title{
 	color: var(--color-text-xl);
 	text-align: center;
-	border-bottom: 1px solid var(--color-primary)
+	border-bottom: 1px solid var(--color-primary);
+	font-size: 22px
 }
 .header_text{
 	text-align: center;
@@ -145,7 +147,8 @@ body{
 	font-size: 1.3em
 }
 .about_1{
-	padding: 2em 1em
+	padding: 2em 1em;
+	padding-top: 0
 }
 .about_2{
 	background-color: var(--color-primary-o);
@@ -322,16 +325,6 @@ body{
 }
 
 @media screen and (min-width: 600px){
-	.header_container{
-	display: grid;
-	grid-template-columns: auto;
-	justify-content: center;
-	grid-column-gap: 2em;
-	padding: 4em;
-	background-color: rgb(43, 46, 74, .4);
-	border-radius: 5px;
-	box-shadow: 0px 10px 40px #111;
-}
 	.about_2{
 		display: flex;
 		flex-direction: column;
@@ -419,6 +412,16 @@ body{
 }
 
 @media screen and (min-width: 1000px) {
+	.header_container{
+	display: grid;
+	grid-template-columns: auto;
+	justify-content: center;
+	grid-column-gap: 2em;
+	padding: 4em;
+	background-color: rgb(43, 46, 74, .4);
+	border-radius: 5px;
+	box-shadow: 0px 10px 40px #111;
+}
 	.nav_logo{
 		margin-left: 2em
 	}
