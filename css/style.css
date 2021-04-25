@@ -252,7 +252,7 @@ body{
 	margin: 1em auto;
 	min-width: 18em;
 	max-width: 18em;
-	min-height: 28em;
+	min-height: 25em;
 	background-color: var(--color-primary-xl);
 	box-shadow: 0px 10px 40px #111;
 }
@@ -298,6 +298,8 @@ body{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	position: relative;
+	bottom: 10px
 }
 
 /*contact*/
