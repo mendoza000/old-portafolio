@@ -17,6 +17,9 @@
 	--color-text-xl: #c4c9bf;
 
 }
+html{
+	scroll-behavior: smooth;
+}
 .explicacion{
 	text-align: center;
 	grid-column-start: 1;
@@ -26,7 +29,7 @@
 	font-style: italic;
 	color: var(--color-text-l);
 	text-align: center;
-	font-size: 19px
+	font-size: 18px
 }
 
 .border-top{
@@ -74,18 +77,25 @@ body{
 .nav_item{
 	margin: 0 0.3em;
 	list-style: none;
-	font-size: 12px
-}
-.nav_item a{
-	padding: 1em; 
+	font-size: 11px;
 	text-decoration: none;
 	border: 2.0px solid var(--color-secundary-xl);
 	border-radius: 10px;
 	color: var(--color-text-xl);
 	transition: 0.5s;
 	font-weight: bold;
+	min-width: 55px;
+	max-width: 55px;
 }
-.nav_item a:hover{
+.nav_item a{
+	display: flex;
+	justify-content: center;
+	padding: 1em;
+	text-decoration: none;
+	color: inherit;
+	text-align: center;
+}
+.nav_item:hover{
 	background-color: var(--color-secundary-xl);
 	transition: 0.5s;
 	border-radius: 10px;
@@ -95,6 +105,7 @@ body{
 /*header*/
 .header{
 	background-image: url(../im/code.jpg);
+	background-attachment: fixed;
 	/*background-color: #fff;*/
 	background-size: cover;
 	width: 100%;
@@ -145,7 +156,7 @@ body{
 /*container*/
 .container{
 	color: var(--color-text-xl);
-	margin: 2em 1em
+	margin: 2em 1em;
 }
 
 /*about*/
@@ -283,6 +294,12 @@ body{
 	color: var(--color-secundary-l)
 }
 
+.btns{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
 /*contact*/
 .contact{
 	display: grid;
@@ -363,14 +380,14 @@ body{
 		align-self: center;
 		margin-right: 1em
 	}
+	.nav_item{
+		min-width: 90px;
+		max-width: 90px;
+		font-size: 13px
+	}
 	.nav_logo{
 		display: initial;
 	}
-	.nav_item a{
-		min-width: 4em;
-		max-width: 4em
-	}
-
 	.about{
 		display: grid;
 		grid-template-columns: auto auto;
@@ -433,10 +450,21 @@ body{
 	box-shadow: 0px 10px 40px #111;
 }
 	.nav_logo{
-		margin-left: 2em
+		margin-left: 2em;
+		display: flex;
+		margin-top: auto;
+		margin-bottom: auto;
 	}
 	.nav_list{
-		margin-right: 2em
+		margin-right: 2em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.nav_item{
+		min-width: 110px;
+		max-width: 110px;
+		padding: 0
 	}
 	.nav_item a{
 		font-size: 16px
