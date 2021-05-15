@@ -124,6 +124,7 @@ body{
 	justify-content: center;
 	border-radius: 5px;
 	margin: 0 1em ;
+	backdrop-filter: blur(6px);
 }
 .header_logo{
 	width: 70px;
