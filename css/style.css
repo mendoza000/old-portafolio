@@ -108,7 +108,6 @@ body{
 /*header*/
 .header{
 	/*background-image: url(../im/code.jpg);*/
-	background-attachment: fixed;
 	/*background-color: #fff;*/
 	background-size: cover;
 	width: 100%;
@@ -119,7 +118,6 @@ body{
 	padding: 5em 0em;
 	background-color: #f36c6c;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%232a2c3d' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23f36c6c' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23e86570' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23dc6074' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23cf5b76' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23c25777' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23b45378' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23a55077' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23974d75' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23894a72' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%237a476e' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%236d4469' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%235f4163' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23533d5c' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23473954' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%233d354c' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23343043' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232c2b3a' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23252630' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
-background-attachment: fixed;
 background-size: cover;
 }
 .header_container{
@@ -128,7 +126,7 @@ background-size: cover;
 	justify-content: center;
 	border-radius: 5px;
 	margin: 0 1em ;
-	backdrop-filter: blur(6px);
+	backdrop-filter: blur(1px);
 }
 .header_logo{
 	width: 70px;
@@ -209,6 +207,7 @@ background-size: cover;
 	grid-template-rows: repeat(3, auto);
 	grid-column-gap: 1em;
 	justify-content: center;
+	align-content: baseline;
 }
 .aptitudes_title{
 	text-align: center;
@@ -518,9 +517,10 @@ background-size: cover;
 	justify-content: center;
 	grid-column-gap: 2em;
 	padding: 4em;
-	background-color: rgb(43, 46, 74, .4);
+	background-color: rgb(42, 44, 61, .7);
 	border-radius: 5px;
-	box-shadow: 0px 10px 40px #111;
+	box-shadow: 0px 10px 25px #222;
+	width: 300px;
 }
 	.nav_logo{
 		margin-left: 2em;
