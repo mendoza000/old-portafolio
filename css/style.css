@@ -111,21 +111,21 @@ body{
 	/*background-color: #fff;*/
 	background-size: cover;
 	width: 100%;
+	height: 55vh;
 	display: grid;
 	grid-template-columns: auto;
 	justify-content: center;
 	grid-column-gap: 2em;
-	padding: 5em 0em;
 	background-color: #f36c6c;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%232a2c3d' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23f36c6c' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23e86570' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23dc6074' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23cf5b76' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23c25777' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23b45378' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23a55077' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23974d75' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23894a72' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%237a476e' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%236d4469' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%235f4163' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23533d5c' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23473954' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%233d354c' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23343043' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232c2b3a' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23252630' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
 background-size: cover;
 }
 .header_container{
-	display: grid;
-	grid-template-columns: auto;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	border-radius: 5px;
-	margin: 0 1em ;
+	margin: auto;
 	backdrop-filter: blur(1px);
 }
 .header_logo{
@@ -133,9 +133,8 @@ background-size: cover;
 	height: 70px;
 	object-fit: cover;
 	align-items: center;
-	display: block;
 	margin: 0 auto;
-	margin-top: -2em;
+	/*margin-top: -2em;*/
 }
 .header_title{
 	color: var(--color-text-xl);
@@ -194,7 +193,7 @@ background-size: cover;
 .about_box{
 	border: 1px solid var(--color-primary-l);
 	border-radius: 5px;
-	margin: 1em
+	margin: 1em;
 }
 
 /*aptitudes*/
@@ -213,6 +212,7 @@ background-size: cover;
 	text-align: center;
 	grid-column-start: 1;
   	grid-column-end: 3;
+  	font-size: 30px;
 }
 .aptitudes_icon{
 	font-size: 5em;
@@ -231,7 +231,12 @@ background-size: cover;
 	min-height: 3em;
 	max-height: 3em;
 	background-color: var(--color-primary-xl);
-	border-radius: 5px
+	border-radius: 5px;
+	transition: 1s;
+}
+.aptitudes_card:hover{
+	background-color: var(--color-primary-l);
+	transition: 1s;
 }
 .punta-punta3{
 	grid-column-start: 1;
@@ -439,10 +444,6 @@ background-size: cover;
 		padding-top: 3em;
 		padding-bottom: 3em
 	}
-	.header{
-		padding-top: 8em;
-		padding-bottom: 8em
-	}
 	.container{
 		margin-left: 1.5em;
 		margin-right: 1.5em
@@ -492,7 +493,8 @@ background-size: cover;
 		flex-wrap: wrap;
 		flex-direction: row;
 		justify-content: space-around;
-		padding-bottom: 3em;
+		padding-bottom: 6em;
+		padding-top: 3em;
 		margin-bottom: 3em;
 	}
 	.project_card{
@@ -512,8 +514,8 @@ background-size: cover;
 
 @media screen and (min-width: 1000px) {
 	.header_container{
-	display: grid;
-	grid-template-columns: auto;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	grid-column-gap: 2em;
 	padding: 4em;
