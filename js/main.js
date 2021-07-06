@@ -1,5 +1,3 @@
-(() =>{
-	'use strict'
 
 	const bars     = document.querySelector('.nav_list'),
 		barsButton = document.querySelector('#bars-button'),
@@ -21,7 +19,7 @@
 	}
 
 	/*cuando se ve, se activa la funcion*/
-	let options = threshold: 1, x = 1;
+	let options = {threshold: 1}, x = 1;
 
 	function edadPlus() {
 		setTimeout(function() {
@@ -33,7 +31,7 @@
 		}, 200)
 	}
 
-	function edadCallback(entries, observer) if (entries[0].isIntersecting) edadPlus();
+	function edadCallback(entries, observer) {if (entries[0].isIntersecting) edadPlus()};
 
 	const observerEdad = new IntersectionObserver(edadCallback, options)
 	observerEdad.observe(edad)
@@ -51,7 +49,7 @@
 		}, 200)
 	}
 
-	function lengCallback(entries, observer) if (entries[0].isIntersecting) lengPlus();
+	function lengCallback(entries, observer) {if (entries[0].isIntersecting) lengPlus();}
 
 	const observerLeng = new IntersectionObserver(lengCallback, options);
 	observerLeng.observe(leng);
@@ -70,9 +68,7 @@
 		}, 200)
 	}
 
-	function projectCallback(entries, observer) if (entries[0].isIntersecting) projectPlus()
+	function projectCallback(entries, observer) {if (entries[0].isIntersecting) projectPlus()}
 
 	const observerProject = new IntersectionObserver(projectCallback, options)
 	observerProject.observe(project)
-
-})();
