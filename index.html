@@ -22,7 +22,7 @@
 		</head>
 		<body>
 			<button class="bars-button" id="bars-button" onclick="hideShow()"><i class="las la-bars" aria-hidden="true"></i></button>
-
+ 
 			<nav class="nav">
 				<img class="nav_logo" src="./im/logo.png" alt="Logo nav">
 				<ul class="nav_list">
@@ -61,7 +61,7 @@
 				</div>
 				<div class="aptitudes_container" id="habilidades">
 					<div class="aptitudes">
-						<h2 class="border-bottom aptitudes_title wow animate__animated animate__fadeInLeft animate__slow"><i class="about_icon color-secondary las la-battery-full"></i>Habilidades actuales</h2>
+						<h2 class="border-bottom aptitudes_title wow animate__animated animate__fadeInLeft animate__slow mt-o"><i class="about_icon color-secondary las la-battery-full"></i>Habilidades actuales</h2>
 						<div class="aptitudes_card wow animate__animated animate__fadeInLeft animate__slow">
 							<i class="aptitudes_icon color-secondary lab la-html5"></i>
 							<h3>HTML5</h3>
@@ -82,6 +82,10 @@
 							<i class="aptitudes_icon color-secondary lab la-git"></i>
 							<h3>Git</h3>
 						</div>
+						<div class="aptitudes_card wow animate__animated animate__fadeInLeft animate__slow">
+							<i class="aptitudes_icon color-secondary las la-box"></i>
+							<h3>Webpack</h3>
+						</div>
 					</div>
 					<div class="aptitudes">
 						<h2 class="border-bottom aptitudes_title wow animate__animated animate__fadeInLeft animate__slow"><i class="about_icon color-secondary las la-battery-quarter"></i>Habilidades en progreso</h2>
@@ -93,15 +97,15 @@
 							<i class="aptitudes_icon color-secondary lab la-vuejs"></i>
 							<h3>VueJS</h3>
 						</div>
-						<div class="punta-punta aptitudes_card wow animate__animated animate__fadeInLeft animate__slow">
-							<i class="aptitudes_icon color-secondary las la-fire-alt"></i>
+						<div class="aptitudes_card wow animate__animated animate__fadeInLeft animate__slow">
+							<i class="aptitudes_icon color-secondary las la-fire"></i>
 							<h3>Firebase</h3>
 						</div>
 					</div>
 				</div>
 				<h2 class="aptitudes_title" id="proyectos"><i class="about_icon color-secondary las la-flask"></i>Proyectos</h2>
 				<div class="projects">
-					<div class="border-top project_card wow animate__animated animate__fadeInLeft animate__slow">
+					<div class="bordesr-top project_card wow animate__animated animate__fadeInLeft animate__slow">
 						<img class="project_img" src="./im/hotel.png">
 						<div class="project_content">
 							<h3>Hotel page</h3>
@@ -113,13 +117,13 @@
 						</div>
 					</div>
 					<div class="border-top project_card wow animate__animated animate__fadeInLeft animate__slow">
-						<img class="project_img" src="./im/fire-list.jpeg">
+						<img class="project_img" src="./im/todojs.jpeg">
 						<div class="project_content">
-							<h3>Fire list</h3>
-							<p class="project_text">Pagina web dinamica usando firebase como backend y bootstrap como framework CSS. Funciona para crear, editar y eliminar tareas creadas por el usuario</p>
+							<h3>TodoJS</h3>
+							<p class="project_text">Aplicacion web para crear listas de tareas, las tareas se guardan en el navegador aunque este se cierre. Aparte cuenta con filtro. Se usa localStorage y webpack para más compatibilidad</p>
 							<div class="btns">
-								<a class="project_btn" target="_blank" href="https://fire-list.vercel.app"><i class="las la-otter"></i> Ver pagina</a>
-								<a class="project_btn btn_borde" target="_blank" href="https://github.com/mendoza000/fire-list"><i class="lab la-github"></i> Ver GitHub</a>
+								<a class="project_btn" target="_blank" href="https://mendoza000.github.io/todojs"><i class="las la-otter"></i> Ver pagina</a>
+								<a class="project_btn btn_borde" target="_blank" href="https://github.com/mendoza000/todojs"><i class="lab la-github"></i> Ver GitHub</a>
 							</div>
 						</div>
 					</div>
@@ -131,6 +135,17 @@
 							<div class="btns">
 								<a class="project_btn" target="_blank" href="https://mendoza000.github.io/fire-money/"><i class="las la-otter"></i> Ver pagina</a>
 								<a class="project_btn btn_borde" target="_blank" href="https://github.com/mendoza000/fire-money/"><i class="lab la-github"></i> Ver GitHub</a>
+							</div>
+						</div>
+					</div>
+					<div class="border-top project_card wow animate__animated animate__fadeInLeft animate__slow">
+						<img class="project_img" src="./im/ppt.jpeg">
+						<div class="project_content">
+							<h3>Piedra, papel o tijeras</h3>
+							<p class="project_text">Juego clasico de piedra, papel y tijeras con un diseño muy bonito y una logica simple. La eleccion del CPU siempre sera aleatoria. Se utiliza webpack</p>
+							<div class="btns">
+								<a class="project_btn" target="_blank" href="https://ppt000.netlify.app/"><i class="las la-otter"></i> Ver pagina</a>
+								<a class="project_btn btn_borde" target="_blank" href="https://github.com/mendoza000/ppt-gameweb/"><i class="lab la-github"></i> Ver GitHub</a>
 							</div>
 						</div>
 					</div>
@@ -159,7 +174,7 @@
 			<script>
 				new WOW().init();
 			</script>
-			<script src="./js/main.js"></script>
+			<script src="./js/main-min.js"></script>
 		</body>
 		<footer class="footer">
 			<p><span class="color-secondary">&copy</span> Hecho por Omar Mendoza.</p>
