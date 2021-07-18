@@ -314,7 +314,9 @@ background-size: cover;
 	flex-wrap: wrap;
 	flex-direction: row;
 	position: relative;
-	bottom: 10px
+	bottom: 10px;
+	justify-content: center;
+	align-items: center;
 }
 
 /*contact*/

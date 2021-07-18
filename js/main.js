@@ -17,7 +17,7 @@
 			view = !view
 		}
 	}
-
+/* Edad */
 	/*cuando se ve, se activa la funcion*/
 	let options = {threshold: 1}, x = 1;
 
@@ -37,12 +37,13 @@
 	observerEdad.observe(edad)
 
 
+/* Cuantas habilidades */
 	let y = 1;
 
 	function lengPlus() {
 		setTimeout(function() {
 			leng.innerText = `${y}`;
-			if (y < 5) {
+			if (y < 6) {
 				y++;
 				lengPlus();
 			}
@@ -55,13 +56,13 @@
 	observerLeng.observe(leng);
 
 
-
+/* Numero de proyectos */
 	let z = 1;
 
 	function projectPlus() {
 		setTimeout(function() {
 			project.innerText = `${z}`;
-			if (z < 4) {
+			if (z < 5) {
 				z++;
 				projectPlus();
 			}
